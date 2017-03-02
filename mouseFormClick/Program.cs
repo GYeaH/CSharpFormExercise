@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 using System.Drawing;
 
-namespace ConsoleWindowsForm
+namespace mouseFormClick
 {
 
     class Program

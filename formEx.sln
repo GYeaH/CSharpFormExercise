@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "button_textbox_contextMenu"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flightInfo", "flightInfo\flightInfo.csproj", "{A113F70D-B90C-4CA1-BC61-0E1F52D33B38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doubleClickPosition", "doubleClickPosition\doubleClickPosition.csproj", "{374D7B94-04D9-4707-813E-7AE519049EDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mouseFormClick", "mouseFormClick\mouseFormClick.csproj", "{374D7B94-04D9-4707-813E-7AE519049EDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

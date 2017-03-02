@@ -9,17 +9,13 @@ using System.Windows.Forms;
 using System.Drawing;
 
 namespace ConsoleWindowsForm
-
 {
 
     class Program
-
     {
-
         //Here we define a derived class of Windows Form
 
         class MyForm : System.Windows.Forms.Form
-
         {
 
             //Here we declare an object of type Label

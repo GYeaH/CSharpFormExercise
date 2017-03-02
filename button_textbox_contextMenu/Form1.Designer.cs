@@ -1,4 +1,4 @@
-﻿namespace a5_3
+﻿namespace button_textbox_contectMenu
 {
     partial class MainForm
     {

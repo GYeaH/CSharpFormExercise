@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace a5_2
+namespace flightInfo
 {
     public partial class Form : System.Windows.Forms.Form
     {

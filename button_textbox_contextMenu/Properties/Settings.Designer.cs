@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace a5_2.Properties
+namespace button_textbox_contectMenu.Properties
 {
 
 

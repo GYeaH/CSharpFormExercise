@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace a5_3.Properties
+namespace flightInfo.Properties
 {
 
 

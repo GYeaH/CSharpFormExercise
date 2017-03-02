@@ -1,4 +1,4 @@
-﻿namespace a5_2
+﻿namespace flightInfo
 {
     partial class Form
     {

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace a5_3
+namespace button_textbox_contectMenu
 {
     public partial class MainForm : System.Windows.Forms.Form
     {

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace a5_2
+namespace button_textbox_contectMenu
 {
     static class Program
     {
@@ -16,7 +13,9 @@ namespace a5_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form());
+            Application.Run(new MainForm());
+            
         }
+        
     }
 }

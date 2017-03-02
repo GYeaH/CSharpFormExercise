@@ -43,6 +43,9 @@ namespace ConsoleWindowsForm
                 //Here we specify that the event handler for cases in which the form is clicked
                 //is Form_Click() method
                 this.Click += new System.EventHandler(this.Form_Click);
+                
+                /*============================================= a5_1 ==============================================*/
+                this.MouseDoubleClick += new MouseEventHandler(this.Form_MouseDoubleClick);
 
 
                 //Here we initialize infoLabel component by defining its size, location and text.
@@ -105,7 +108,20 @@ namespace ConsoleWindowsForm
                 infoLabel.Text += "--------------------" + Environment.NewLine;
             }
 
+
+            /*============================================= a5_1 ==============================================*/
+            void Form_MouseDoubleClick(object sender, MouseEventArgs e)
+            {
+                infoLabel.Text += "====================== Assignment5 =====================" + Environment.NewLine;
+                infoLabel.Text += "Double clicked position: " + Environment.NewLine 
+                    +"X: " + e.X + " Y: " + e.Y;
+            }
+
         }
+
+
+
+
 
         [STAThread]
         static void Main(string[] args)

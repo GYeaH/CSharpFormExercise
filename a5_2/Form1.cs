@@ -24,7 +24,7 @@ namespace a5_2
         //return to form when click summary label
         private void summaryLabel_Click(object sender, EventArgs e)
         {
-            this.summaryLabel.Text = "";
+            summaryLabel.Hide();
         }
 
         private string FlightInfoString(string id, string origin, string destination, string date, string time)
@@ -43,6 +43,8 @@ namespace a5_2
 
         private void submitButton_Click(object sender, EventArgs e)
         {
+            summaryLabel.SetBounds(0,0,this.Width,this.Height);
+
             summaryLabel.Show();
             summaryLabel.Text = "";
 
@@ -61,14 +63,12 @@ namespace a5_2
             foreach (string info in infoList)
                 summaryLabel.Text += info;
 
-
         }
 
         private void Form_Load(object sender, EventArgs e)
         {
             summaryLabel.BackColor = Color.AliceBlue;
             summaryLabel.Hide();
-
         }
     }
 }

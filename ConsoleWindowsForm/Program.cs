@@ -22,7 +22,6 @@ namespace ConsoleWindowsForm
 
         {
 
-
             //Here we declare an object of type Label
             Label infoLabel;
 
@@ -31,10 +30,9 @@ namespace ConsoleWindowsForm
 
             {
 
-                this.Text = "First Windows Form";
+                this.Text = "Windows Form";
 
-                //In the following we set the size, location and background olor
-                //of the main window of the application.
+                //set the size, location and background color of main window
                 this.Size = new Size(500, 300);
                 this.Location = new Point(0, 0);
                 this.BackColor = Color.Aqua;
@@ -43,8 +41,7 @@ namespace ConsoleWindowsForm
                 //Here we specify that the event handler for cases in which the form is clicked
                 //is Form_Click() method
                 this.Click += new System.EventHandler(this.Form_Click);
-                
-                /*============================================= a5_1 ==============================================*/
+
                 this.MouseDoubleClick += new MouseEventHandler(this.Form_MouseDoubleClick);
 
 
@@ -109,25 +106,18 @@ namespace ConsoleWindowsForm
             }
 
 
-            /*============================================= a5_1 ==============================================*/
             void Form_MouseDoubleClick(object sender, MouseEventArgs e)
             {
-                infoLabel.Text += "====================== Assignment5 =====================" + Environment.NewLine;
-                infoLabel.Text += "Double clicked position: " + Environment.NewLine 
-                    +"X: " + e.X + " Y: " + e.Y;
+                infoLabel.Text += "Double clicked position: " + Environment.NewLine;
+                infoLabel.Text += "X: " + e.X + " Y: " + e.Y;
             }
 
         }
 
 
-
-
-
         [STAThread]
         static void Main(string[] args)
-
         {
-
             //Here we run the application by creating and loading an object of myForm.
             Application.Run(new MyForm());
 

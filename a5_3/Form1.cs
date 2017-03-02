@@ -15,10 +15,7 @@ namespace a5_3
     {
         //This is a global variable.
         internal static int formCounter;
-
-        // This BindingSource binds the list to the DataGridView control.
-        private BindingSource textboxBindingSource = new BindingSource();
-
+        
         ArrayList buttonList = new ArrayList();
         ArrayList textboxList = new ArrayList();
 
@@ -34,25 +31,11 @@ namespace a5_3
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //formCounter = 1;
-
-            /*
-            textBox.Left = (this.Width - textBox.Width) / 2;
-            changeButton.Left = (this.Width - changeButton.Width) / 2;
-            */
-
             this.Text = "Form " + formCounter;
 
             buttonList.Add(changeButton);
             textboxList.Add(textBox);
-
             
-            foreach (Button b in buttonList)
-            {
-
-
-            }
-
             foreach (TextBox t in textboxList)
             {
                 t.Text = textBoxString(this.Top, this.Left, this.BackColor);
@@ -78,13 +61,6 @@ namespace a5_3
         /*================================= textbox ===============================*/
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            /*
-            Size size = TextRenderer.MeasureText(textBox.Text, textBox.Font);
-            textBox.Width = size.Width;
-            textBox.Height = size.Height;
-
-            textBox.Left = (this.Width - textBox.Width) / 2;
-            */
         }
 
 
@@ -94,72 +70,21 @@ namespace a5_3
 
             globalButton.Width = 70;
             globalButton.Height = 20;
-
-            /*
-            foreach (Button b in buttonList)
-            {
-                b.Width = 70;
-                b.Height = 20;
-                b.Location = new Point((changeButton.Left + changeButton.Width) * buttonList.IndexOf(b) + 5, changeButton.Top);
-            }
             
-            
-            textBox.Left = (this.Width - textBox.Width) / 2;
-            textBox.Top = this.Height / 4 - 10;
-            changeButton.Left = (this.Width - changeButton.Width) / 2;
-            changeButton.Top = this.Height / 2;
-            */
         }
 
         private void bigToolStripMenuItem_Click(object sender, EventArgs e)
         {
             globalButton.Width = 100;
             globalButton.Height = 50;
-
-            //globalButton.Location = new Point((changeButton.Left + changeButton.Width) * buttonList.IndexOf(b) + 5, changeButton.Top);
-
-            //ContextMenuStrip k = (ContextMenuStrip)(((((ToolStripDropDownItem)sender).DropDown).OwnerItem).OwnerItem).Owner;
-            /*
-            ToolStripDropDownMenu t = (ToolStripDropDownMenu)((ToolStripMenuItem)sender).Owner;
-            ContextMenuStrip cms = (ContextMenuStrip)((t.OwnerItem).Owner);
-
-            object caller = cms.SourceControl;
-
-            textBox.Text = "Source: " + cms.Text;
             
-            
-             foreach (Button b in buttonList)
-             {
-                 b.Width = 100;
-                 b.Height = 50;
-
-                 b.Location = new Point((changeButton.Left + changeButton.Width) * buttonList.IndexOf(b) + 5, changeButton.Top);
-             }
-
-
-            textBox.Left = (this.Width - textBox.Width) / 2;
-            textBox.Top = this.Height / 4 - 10;
-            changeButton.Left = (this.Width - changeButton.Width) / 2;
-            changeButton.Top = this.Height / 2 + 10;
-            */
         }
 
         private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             globalButton.BackColor = Color.White;
             globalButton.ForeColor = Color.Black;
-
-
-            /*
-            foreach (Button b in buttonList)
-            {
-                b.BackColor = Color.White;
-                b.ForeColor = Color.Black;
-            }
-            */
-
-
-            //this.BackColor = Color.White;
+            
         }
 
         private void blackToolStripMenuItem_Click(object sender, EventArgs e)
@@ -167,16 +92,7 @@ namespace a5_3
 
             globalButton.BackColor = Color.Black;
             globalButton.ForeColor = Color.White;
-
-            /*
-            foreach (Button b in buttonList)
-            {
-                b.BackColor = Color.Black;
-                b.ForeColor = Color.White;
-            }
-            */
-
-            //this.BackColor = Color.Black;
+            
         }
 
 
